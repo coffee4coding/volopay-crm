@@ -1,4 +1,4 @@
-import type { ApiResponse } from './http';
+import type { ApiResponse } from './http.js';
 
 // Logs the real error server-side but never echoes raw DB/driver error text
 // (column names, constraint names, internal structure) back to the caller.

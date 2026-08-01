@@ -1,9 +1,9 @@
-import type { ApiRequest, ApiResponse } from '../_lib/http';
-import { supabaseAdmin } from '../_lib/supabaseAdmin';
-import { scoreLead } from '../_lib/scoring';
-import { normalizeLeadInput, ValidationError } from '../_lib/validate';
-import { requireAuth } from '../_lib/auth';
-import { serverError } from '../_lib/errors';
+import type { ApiRequest, ApiResponse } from '../_lib/http.js';
+import { supabaseAdmin } from '../_lib/supabaseAdmin.js';
+import { scoreLead } from '../_lib/scoring.js';
+import { normalizeLeadInput, ValidationError } from '../_lib/validate.js';
+import { requireAuth } from '../_lib/auth.js';
+import { serverError } from '../_lib/errors.js';
 
 const SORTABLE_COLUMNS = new Set(['created_at', 'updated_at', 'score', 'name', 'company', 'stage', 'priority']);
 

@@ -2,8 +2,8 @@
 // happen client-side directly against Supabase Auth (see src/lib/auth.ts);
 // this just confirms the bearer token on each request is a valid, current
 // session before letting a handler touch the database.
-import type { ApiRequest, ApiResponse } from './http';
-import { supabaseAdmin } from './supabaseAdmin';
+import type { ApiRequest, ApiResponse } from './http.js';
+import { supabaseAdmin } from './supabaseAdmin.js';
 
 /** Returns true if authorized. Otherwise writes a 401 response and returns false. */
 export async function requireAuth(req: ApiRequest, res: ApiResponse): Promise<boolean> {

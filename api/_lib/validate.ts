@@ -1,4 +1,4 @@
-import type { CompanySize, Engagement, Source, Stage, Timeline } from './scoring';
+import type { CompanySize, Engagement, Source, Stage, Timeline } from './scoring.js';
 
 const COMPANY_SIZES: CompanySize[] = ['1-10', '11-50', '51-200', '201-1000', '1000+', 'unknown'];
 const SOURCES: Source[] = ['website', 'referral', 'cold_outreach', 'event', 'social', 'other'];
